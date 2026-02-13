@@ -25,11 +25,10 @@ Kitsune performs scheduled vulnerability scanning of in-boundary assets to ident
 - POA&M is the authoritative tracker for open findings and due dates.
 
 ### Who
-- **SecOps / Scanner Operator:** runs scans and produces scan summaries.
-- **LAN Admins / System Maintainers:** remediate findings (patch/configuration changes).
+- **IT:** runs scans and produces scan summaries.
+- **IT:** remediate findings (patch/configuration changes).
 - **ISSO:** verifies evidence completeness, documents findings, ensures POA&M tracking.
 - **ISSM:** oversight, risk posture reporting, and inspection readiness QC.
-- **System Owner:** approves exceptions/risk acceptance where required.
 
 ### When / cadence (example)
 - **Weekly or monthly** scanning (organization-defined), plus **out-of-cycle** scanning after major changes.

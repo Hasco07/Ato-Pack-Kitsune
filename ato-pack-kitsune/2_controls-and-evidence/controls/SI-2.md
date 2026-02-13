@@ -31,6 +31,6 @@ Kitsune remediates OS and software flaws on a defined cadence and tracks remedia
 ---
 
 ## Evidence (public-safe examples)
-- Patch compliance summary: `2_controls-and-evidence/evidence/patch-compliance-sample/patch-compliance-summary.md`
-- POA&M workflow: `3_poam/poam-workflow.md`
-- Sample POA&M export: `3_poam/poam-sample.csv`
+- [Patch compliance summary](../evidence/patch-compliance-sample/patch-compliance-summary.md)
+- [POA&M workflow](../../3_poam/poam-workflow.md)
+- [Sample POA&M export](../../3_poam/poam-sample.csv)

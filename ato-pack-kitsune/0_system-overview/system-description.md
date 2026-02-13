@@ -26,7 +26,7 @@ Kitsune is an isolated local area network (LAN) used to develop, integrate, and 
 - **Directory services / IdP** (identity lifecycle + authentication – fictional)
 - **Patch repository / staging** (offline patching workflow)
 
-## System boundary (plain English)
+## System boundary
 Included in the Kitsune boundary:
 - The isolated Kitsune LAN (switching/routing within the lab)
 - Workstations and servers used for development, build, test, logging, and scanning

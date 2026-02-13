@@ -1,33 +1,34 @@
+```md
 # Boundary Diagram (Mermaid)
 
-> Mermaid renders directly on GitHub. This diagram is **fictional** and intended to show boundary clarity (what is in/out).
+> Fictional boundary diagram to show what is **in-scope** vs **out-of-scope** for Kitsune.
 
 ```mermaid
 flowchart LR
   classDef blocked fill:#f7d7d7,stroke:#b55,stroke-width:1px,color:#000;
 
-  subgraph LAN[Kitsune LAN (Air‑Gapped / Offline)]
+  subgraph LAN["Kitsune LAN - Air-gapped / Offline"]
     direction LR
 
-    subgraph UZ[User Zone]
-      DevWS[Developer Workstations]
+    subgraph UZ["User Zone"]
+      DevWS["Developer Workstations"]
     end
 
-    subgraph AZ[Admin Zone]
-      AdminWS[Admin Workstations]
+    subgraph AZ["Admin Zone"]
+      AdminWS["Admin Workstations"]
     end
 
-    subgraph SZ[Server Zone]
-      IdP[Directory Services / IdP]
-      Git[Source Control Server]
-      CI[Build / CI Server]
-      Art[Artifact Repository]
-      Test[Test Harness / Simulator]
+    subgraph SZ["Server Zone"]
+      IdP["Directory Services / IdP"]
+      Git["Source Control Server"]
+      CI["Build / CI Server"]
+      Art["Artifact Repository"]
+      Test["Test Harness / Simulator"]
     end
 
-    subgraph ST[Security Tooling]
-      SIEM[Central Logging / SIEM]
-      Scanner[Vulnerability Scanner]
+    subgraph ST["Security Tooling"]
+      SIEM["Central Logging / SIEM"]
+      Scanner["Vulnerability Scanner"]
     end
 
     DevWS -->|Authenticate| IdP
@@ -44,13 +45,15 @@ flowchart LR
     Test -->|Forward logs| SIEM
     IdP -->|Auth/audit logs| SIEM
 
+    Scanner -->|Scan (scheduled)| DevWS
     Scanner -->|Scan (scheduled)| Git
     Scanner -->|Scan (scheduled)| CI
     Scanner -->|Scan (scheduled)| Art
-    Scanner -->|Scan (scheduled)| DevWS
+    Scanner -->|Scan (scheduled)| Test
   end
 
-  Media[Controlled Media Transfer Point (Fictional)] -->|Approved import/export only| LAN
-  Ext[(External Networks / Internet)]:::blocked
-  LAN -. No direct connectivity .-> Ext
-```
+  Media["Controlled Media Transfer Point (Fictional)"]
+  Ext["External Networks / Internet"]:::blocked
+
+  Media -. "Approved import/export only" .-> LAN
+  LAN -. "No direct connectivity" .-> Ext

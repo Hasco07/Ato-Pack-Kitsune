@@ -20,9 +20,9 @@ This repo is intentionally designed to look like a clean, assessor-friendly “A
 - How I reduce inspection pain using **standardization and quality controls**
 
 ### What to review first (5–10 minutes)
-1. **System overview:** `0_system-overview/system-description.md`
-2. **SSP (public-style):** `1_rmf-artifacts/SSP.md`
-3. **Pick 2–3 controls:** `2_controls-and-evidence/controls/`  
+1. **System overview:** [System description](ato-pack-kitsune/0_system-overview/system-description.md)
+2. **SSP (public-style):** [SSP](ato-pack-kitsune/1_rmf-artifacts/SSP.md)
+3. **Pick 2–3 controls:** [Controls folder](ato-pack-kitsune/2_controls-and-evidence/controls/) 
    Suggested: `AC-2.md`, `AU-2.md`, `CM-2.md`, `SI-2.md`
 4. **POA&M workflow:** `3_poam/poam-workflow.md`
 5. **Inspection readiness:** `4_self-inspections/inspection-readiness-runbook.md`

@@ -37,10 +37,11 @@ Because Kitsune is air-gapped, any import/export of data or updates is handled v
 ---
 
 ## Evidence (public-safe examples)
-- Media transfer procedure: `2_controls-and-evidence/evidence/media-transport-sample/media-transfer-procedure.md`
-- Media transfer log: `2_controls-and-evidence/evidence/media-transport-sample/media-transfer-log_YYYY-MM-DD.md`
-- Malware scan record: `2_controls-and-evidence/evidence/media-transport-sample/malware-scan-record_YYYY-MM-DD.md`
-- Approved media inventory: `2_controls-and-evidence/evidence/media-transport-sample/approved-media-inventory.md`
+- [Media transfer procedure](../evidence/media-transport-sample/media-transfer-procedure.md)
+- [Media transfer log](../evidence/media-transport-sample/media-transfer-log_YYYY-MM-DD.md)
+- [Malware scan record](../evidence/media-transport-sample/malware-scan-record_YYYY-MM-DD.md)
+- [Approved media inventory](../evidence/media-transport-sample/approved-media-inventory.md)
+
 
 ---
 

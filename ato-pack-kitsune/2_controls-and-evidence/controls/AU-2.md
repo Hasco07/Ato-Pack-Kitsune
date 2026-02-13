@@ -37,6 +37,6 @@ Kitsune defines and logs security-relevant events across the isolated LAN to sup
 ---
 
 ## Evidence (public-safe examples)
-- Log source list: `2_controls-and-evidence/evidence/logging-config-sample/log-source-list.md`
-- Log forwarding configuration summary: `2_controls-and-evidence/evidence/logging-config-sample/log-forwarding-config.md`
-- Log review checklist: `2_controls-and-evidence/evidence/logging-config-sample/log-review-checklist.md`
+- [Log source list](../evidence/logging-config-sample/log-source-list.md)
+- [Log forwarding configuration summary](../evidence/logging-config-sample/log-forwarding-config.md)
+- [Log review checklist](../evidence/logging-config-sample/log-review-checklist.md)

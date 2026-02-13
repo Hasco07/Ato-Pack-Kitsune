@@ -1,4 +1,4 @@
-# Boundary Diagram
+# Boundary Diagram (Fictional)
 
 > Fictional boundary diagram to show what is **in-scope** vs **out-of-scope** for Kitsune.
 

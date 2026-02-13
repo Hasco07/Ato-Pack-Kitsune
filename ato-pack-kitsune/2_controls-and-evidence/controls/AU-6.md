@@ -27,7 +27,7 @@ Kitsune reviews and analyzes audit logs and security-relevant events to detect s
 - Leadership-facing summaries are captured in periodic briefs when appropriate.
 
 ### Who
-- **SecOps / ISSO:** performs routine review and alert triage; documents results.
+- **ISSO:** performs routine review and alert triage; documents results.
 - **ISSM:** oversight; ensures cadence is met and reporting is inspection-ready.
 - **System Owner / Program Leadership (fictional):** receives risk summaries as needed.
 

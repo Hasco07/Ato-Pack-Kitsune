@@ -32,6 +32,7 @@ Kitsune maintains documented baselines for in-boundary components (workstations,
 ---
 
 ## Evidence (public-safe examples)
-- Change ticket example: `2_controls-and-evidence/evidence/change-control-sample/change-ticket-example.md`
-- Baseline version history: `2_controls-and-evidence/evidence/change-control-sample/baseline_version_history.md`
-- CM Plan: `1_rmf-artifacts/configuration-management-plan.md`
+- [Change ticket example](../evidence/change-control-sample/change-ticket-example.md)
+- [Baseline version history](../evidence/change-control-sample/baseline_version_history.md)
+- [Configuration Management Plan](../../1_rmf-artifacts/configuration-management-plan.md)
+

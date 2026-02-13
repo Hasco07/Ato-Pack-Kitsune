@@ -47,8 +47,8 @@ Everything here is **fictionalized/sanitized** to demonstrate process and qualit
 ```text
 0_system-overview/
   system-description.md
-  boundary-diagram.png
-  data-flow-diagram.png
+  boundary-diagram.md
+  data-flow-diagram.md
   roles-and-responsibilities.md
 
 1_rmf-artifacts/

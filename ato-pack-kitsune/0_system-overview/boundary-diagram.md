@@ -30,29 +30,29 @@ flowchart LR
       Scanner["Vulnerability Scanner"]
     end
 
-    DevWS --> IdP
-    AdminWS --> IdP
+    DevWS -->|auth| IdP
+    AdminWS -->|auth| IdP
 
-    DevWS --> Git
-    CI --> Git
-    CI --> Art
-    CI --> Test
+    DevWS -->|commit/fetch| Git
+    CI -->|pull| Git
+    CI -->|store| Art
+    CI -->|test| Test
 
-    Git --> SIEM
-    CI --> SIEM
-    Art --> SIEM
-    Test --> SIEM
-    IdP --> SIEM
+    Git -->|logs| SIEM
+    CI -->|logs| SIEM
+    Art -->|logs| SIEM
+    Test -->|logs| SIEM
+    IdP -->|audit| SIEM
 
-    Scanner --> DevWS
-    Scanner --> Git
-    Scanner --> CI
-    Scanner --> Art
-    Scanner --> Test
+    Scanner -->|scan| DevWS
+    Scanner -->|scan| Git
+    Scanner -->|scan| CI
+    Scanner -->|scan| Art
+    Scanner -->|scan| Test
   end
 
   Media["Controlled Media Transfer Point (Fictional)"]
   Ext["External Networks / Internet"]:::blocked
 
-  Media -. "Approved import/export only" .-> LAN
-  LAN -. "No direct connectivity" .-> Ext
+  Media -. "approved transfer" .-> LAN
+  LAN -. "no connectivity" .-> Ext

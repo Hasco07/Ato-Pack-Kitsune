@@ -21,7 +21,7 @@ Kitsune remediates OS and software flaws on a defined cadence and tracks remedia
 - POA&M is used to track remediation actions, owners, and dates.
 
 ### Who
-- LAN Admins apply patches and maintain patch staging.
+- System Admins apply patches and maintain patch staging.
 - ISSO validates evidence and ensures findings are tracked; ISSM provides oversight.
 
 ### When / cadence (example)

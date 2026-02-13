@@ -1,4 +1,4 @@
-# Boundary Diagram (Mermaid)
+# Boundary Diagram
 
 > Fictional boundary diagram to show what is **in-scope** vs **out-of-scope** for Kitsune.
 

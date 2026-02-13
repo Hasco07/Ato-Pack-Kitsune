@@ -37,11 +37,12 @@ Kitsune performs scheduled vulnerability scanning of in-boundary assets to ident
 ---
 
 ## Evidence (public-safe examples)
-- Scan schedule: `2_controls-and-evidence/evidence/vuln-scan-summary-sample/scan-schedule.md`
-- Scan summary record: `2_controls-and-evidence/evidence/vuln-scan-summary-sample/scan-summary_YYYY-MM-DD.md`
-- Remediation status summary: `2_controls-and-evidence/evidence/vuln-scan-summary-sample/remediation-status_YYYY-MM-DD.md`
-- POA&M workflow: `3_poam/poam-workflow.md`
-- Sample POA&M export: `3_poam/poam-sample.csv`
+- [Scan schedule](../evidence/vuln-scan-summary-sample/scan-schedule.md)
+- [Scan summary record](../evidence/vuln-scan-summary-sample/scan-summary_YYYY-MM-DD.md)
+- [Remediation status summary](../evidence/vuln-scan-summary-sample/remediation-status_YYYY-MM-DD.md)
+- [POA&M workflow](../../3_poam/poam-workflow.md)
+- [Sample POA&M export](../../3_poam/poam-sample.csv)
+
 
 ---
 

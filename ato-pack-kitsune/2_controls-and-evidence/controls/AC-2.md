@@ -50,6 +50,11 @@ Kitsune manages user and privileged accounts through a documented lifecycle so t
 - Account lifecycle events (create/modify/disable/remove), privilege changes, and authentication events are logged and forwarded to the central logging/SIEM capability.
 
 ---
+## Evidence (public-safe examples)
+- [Account provisioning workflow](../evidence/account-management-sample/account-provisioning-workflow.md)
+- [Access review record](../evidence/account-management-sample/access-review_YYYY-MM-DD.md)
+- (Optional) Ticket examples, account inventory export (fictional), privileged access list, and log review checklist.
+
 
 ## Evidence (public-safe examples)
 - [Account provisioning workflow](../evidence/account-management-sample/account-provisioning-workflow.md)

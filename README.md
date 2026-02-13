@@ -25,7 +25,7 @@ This repo is intentionally designed to look like a clean, assessor-friendly “A
 3. **Pick 2–3 controls:** [Controls folder](ato-pack-kitsune/2_controls-and-evidence/controls/) 
    Suggested: `AC-2.md`, `AU-2.md`, `CM-2.md`, `SI-2.md`
 4. **POA&M workflow:**  [POA&M workflow](ato-pack-kitsune/3_poam/poam-workflow.md) 
-5. **Inspection readiness:** [Inspection readiness runbook](4_self-inspections/inspection-readiness-runbook.md)
+5. **Inspection readiness:** [Inspection readiness runbook](ato-pack-kitsune/4_self-inspections/inspection-readiness-runbook.md)
 
 ### What’s intentionally omitted (OPSEC / proprietary)
 - Any proprietary templates, customer names, real system diagrams, hostnames, IPs, or screenshots

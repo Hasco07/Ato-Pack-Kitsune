@@ -18,7 +18,7 @@ Kitsune performs scheduled vulnerability scanning of in-boundary assets to ident
 - Scans are executed using a designated vulnerability scanning capability (fictional).
 - Scanner content/signature updates are handled via **controlled media transfer** appropriate for an offline LAN.
 - Results are triaged by severity and operational impact.
-- Remediation actions are assigned owners and tracked to closure (or formally exceptioned) via POA&M.
+- Remediation actions are assigned owners and tracked to closure (or risk accepted) via POA&M.
 
 ### Where
 - Scan schedules, scan summaries, and remediation status are stored as evidence artifacts.

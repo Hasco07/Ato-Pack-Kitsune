@@ -1,4 +1,4 @@
-# Data Flow Diagram (Mermaid)
+# Data Flow Diagram (Fictional)
 
 > This diagram focuses on the **development → build → test → logging** flow inside an isolated LAN.
 

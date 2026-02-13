@@ -1,20 +1,37 @@
 # CM-2 — Baseline Configuration
 
 ## Summary
-Kitsune maintains documented baselines for system components to reduce configuration drift and enable repeatable compliance.
+Kitsune maintains documented baselines for in-boundary components (workstations, servers, and core services) to reduce configuration drift and enable repeatable compliance.
+
+---
 
 ## Implementation
-- **What:** Baselines exist for OS configuration, installed software, and application settings (public-safe summaries).
-- **How:** Baselines are version-controlled; changes follow the CM plan and are validated post-change.
-- **Where:** Baseline documents live in this repo and/or in the fictional CMDB.
-- **Who:** Engineering maintains baselines; ISSO verifies evidence; ISSM reviews high-risk changes.
-- **When / cadence:** Baselines reviewed quarterly; after significant changes.
 
-## Evidence
-- `../evidence/change-control-sample/baseline_version_history.md`
-- `../evidence/change-control-sample/change-ticket-example.md`
+### What is baselined (examples)
+- Workstation baseline (user vs admin workstation configuration)
+- Server baseline (IdP, source control, CI/build, artifact repository, logging)
+- Core security configurations (logging enabled, audit policies, account policies)
+- Approved software list / installed packages (fictional summary)
 
-## Common failure modes
-- Baselines exist but are outdated
-- Changes implemented without documentation
-- No proof of post-change validation
+### How baselines are controlled
+- Baseline documentation is version-controlled.
+- Changes follow the configuration management process and are reviewed/approved prior to implementation.
+- Standardized naming and version history make it easy to demonstrate “what changed and why.”
+
+### Where baselines live
+- Baseline descriptions and change history live in this repo as public-safe summaries.
+
+### Who approves changes
+- System Owner / LAN Admins approve operational changes.
+- ISSO/ISSM validates documentation quality and evidence completeness prior to assessment.
+
+### When / cadence
+- Baselines reviewed at least annually and when significant changes occur.
+- Emergency changes are documented and retrospectively reviewed.
+
+---
+
+## Evidence (public-safe examples)
+- Change ticket example: `2_controls-and-evidence/evidence/change-control-sample/change-ticket-example.md`
+- Baseline version history: `2_controls-and-evidence/evidence/change-control-sample/baseline_version_history.md`
+- CM Plan: `1_rmf-artifacts/configuration-management-plan.md`

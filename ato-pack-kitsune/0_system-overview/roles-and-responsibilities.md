@@ -1,12 +1,17 @@
 # Roles and Responsibilities (Fictional)
 
+## Program / Mission Roles
+- **System Owner:** Mission/program accountability; approves access for privileged roles; approves major boundary changes.
+- **Engineering Lead:** Owns delivery of software builds and test execution inside Kitsune.
+- **LAN Administrators:** Operate the isolated LAN (servers, workstations, patch staging, backups, account administration).
+
 ## Security Roles
-- **ISSM (fictional):** final review, risk acceptance coordination, inspection readiness authority
-- **ISSO (fictional):** SSP updates, evidence collection, POA&M management, daily compliance operations
-- **System Owner (fictional):** budget/mission accountability, approves major changes
-- **ISSE / Engineers (fictional):** implement technical controls, provide technical evidence
+- **ISSM:** Final review authority for SSP/control narrative quality; risk acceptance coordination; inspection readiness lead.
+- **ISSO:** Maintains SSP artifacts; validates evidence; manages POA&Ms; runs continuous monitoring cadence.
+- **ISSE / Engineers:** Implement technical controls, hardening, and logging; provide technical evidence.
 
 ## Cadence / Battle Rhythm (example)
-- Weekly: POA&M triage + review of overdue items
-- Monthly: scan review + evidence refresh
-- Quarterly: self-inspection + SSP deltas review
+- **Weekly:** POA&M triage + overdue review + change calendar check
+- **Monthly:** scan review + patch compliance evidence refresh + log review sampling
+- **Quarterly:** privileged account review + self-inspection + SSP delta review
+- **Annually:** full account inventory review + contingency/IR tabletop (public-safe)

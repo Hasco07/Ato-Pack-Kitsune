@@ -1,20 +1,36 @@
 # SI-2 — Flaw Remediation (Patching)
 
 ## Summary
-Kitsune remediates software and OS flaws in a timely manner and tracks remediation status.
+Kitsune remediates OS and software flaws on a defined cadence and tracks remediation status to maintain a secure baseline inside the isolated LAN.
+
+---
 
 ## Implementation
-- **What:** Patch compliance is monitored and exceptions are tracked.
-- **How:** Findings from scans and patch reports feed the POA&M; remediation is validated and documented.
-- **Where:** Patch compliance reporting is stored as evidence; POA&M tracks status.
-- **Who:** Engineering implements patches; ISSO tracks POA&M; ISSM escalates overdue risk.
-- **When / cadence:** Patch compliance checked monthly; critical fixes prioritized (fictional policy).
 
-## Evidence
-- `../evidence/patch-compliance-sample/patch-compliance-summary.md`
-- `../../3_poam/poam-sample.csv`
+### What
+- Patches are applied for servers and workstations.
+- Exceptions are documented (e.g., compatibility constraints) and tracked through POA&M.
 
-## Common failure modes
-- “Patched” with no proof
-- Exceptions not documented
-- Scan results not reconciled with POA&M
+### How
+- Patches are staged through an **offline patch intake** process (fictional) appropriate for an air-gapped LAN.
+- Patch status is validated via reports and/or scans.
+- Critical vulnerabilities are prioritized and tracked to closure.
+
+### Where
+- Patch compliance summaries and scan summaries are stored as evidence artifacts.
+- POA&M is used to track remediation actions, owners, and dates.
+
+### Who
+- LAN Admins apply patches and maintain patch staging.
+- ISSO validates evidence and ensures findings are tracked; ISSM provides oversight.
+
+### When / cadence (example)
+- Monthly patch cycle (standard)
+- Out-of-cycle patching for critical/high risk items as required
+
+---
+
+## Evidence (public-safe examples)
+- Patch compliance summary: `2_controls-and-evidence/evidence/patch-compliance-sample/patch-compliance-summary.md`
+- POA&M workflow: `3_poam/poam-workflow.md`
+- Sample POA&M export: `3_poam/poam-sample.csv`

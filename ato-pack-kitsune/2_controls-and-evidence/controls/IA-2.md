@@ -1,20 +1,36 @@
 # IA-2 — Identification and Authentication
 
 ## Summary
-Kitsune uniquely identifies and authenticates users and administrators before granting access.
+Kitsune uniquely identifies and authenticates users and administrators before allowing access to LAN services and resources.
+
+---
 
 ## Implementation
-- **What:** Users authenticate via the fictional IdP; privileged access uses stronger authentication requirements.
-- **How:** Role-based access is enforced after authentication; sessions are time-limited.
-- **Where:** Authentication occurs at the IdP and is consumed by the web app.
-- **Who:** Admins manage auth settings; ISSO verifies evidence; SecOps monitors anomalies.
-- **When / cadence:** Authentication settings reviewed quarterly and after major changes.
 
-## Evidence
-- `../evidence/authentication-sample/auth-flow-description.md`
-- `../evidence/authentication-sample/mfa-policy-summary.md`
+### What
+- Each user has a **unique named account**.
+- Privileged administration uses **separate admin accounts** (no daily-use account elevation).
+- Service accounts are documented and scoped (least privilege).
 
-## Common failure modes
-- MFA policy not applied to privileged roles
-- Missing proof of unique user IDs
-- Session handling not documented
+### How
+- Authentication is performed via the fictional directory/IdP.
+- Stronger authentication requirements apply to privileged/admin access (e.g., MFA, smartcard/cert, or equivalent — fictional for demo).
+- Sessions and access tokens (where applicable) are time-limited and logged.
+
+### Where
+- Directory/IdP provides centralized authentication.
+- LAN services (source control, CI/build, artifact repo) enforce authorization based on role/group membership.
+
+### Who
+- LAN Admins manage authentication services.
+- ISSO validates evidence and ensures policies are implemented and followed.
+
+### When / cadence
+- Authentication policies reviewed at least annually and after major changes.
+- Admin authentication requirements are reviewed quarterly (recommended).
+
+---
+
+## Evidence (public-safe examples)
+- Authentication flow description: `2_controls-and-evidence/evidence/authentication-sample/auth-flow-description.md`
+- MFA policy summary: `2_controls-and-evidence/evidence/authentication-sample/mfa-policy-summary.md`

@@ -1,16 +1,37 @@
 # Data Flow Diagram (Mermaid)
 
+> This diagram focuses on the **development → build → test → logging** flow inside an isolated LAN.
+
 ```mermaid
 sequenceDiagram
-  participant U as User
-  participant W as Web App
-  participant I as Identity Provider
-  participant D as Database
-  participant L as SIEM
+  autonumber
+  participant Dev as Developer
+  participant WS as Dev Workstation
+  participant IdP as Directory/IdP
+  participant Git as Source Control
+  participant CI as Build/CI Server
+  participant Test as Test Harness
+  participant SIEM as Central Logging / SIEM
+  participant Scan as Vulnerability Scanner
+  participant ISSO as ISSO / Compliance
 
-  U->>W: Login request
-  W->>I: Auth redirect / token request
-  I-->>W: Token / assertion
-  W->>D: Read/write application data
-  W->>L: Send audit logs (auth, access, changes)
+  Dev->>WS: Develop code (offline)
+  WS->>IdP: Authenticate (user)
+  WS->>Git: Commit / push changes
+  Git->>SIEM: Record repo audit logs
+
+  CI->>IdP: Authenticate (service account)
+  CI->>Git: Pull source
+  CI->>CI: Build package
+  CI->>Test: Deploy build + run automated tests
+  Test-->>CI: Test results
+  CI->>SIEM: Build/test logs + admin actions
+
+  Note over Scan,ISSO: Continuous Monitoring (example cadence)
+  Scan->>Git: Scheduled scan
+  Scan->>CI: Scheduled scan
+  Scan->>WS: Scheduled scan (sample)
+  Scan->>SIEM: Forward scan summaries
+  ISSO->>SIEM: Review alerts/logs
+  ISSO->>ISSO: Create/update POA&M entries (fictional)
 ```

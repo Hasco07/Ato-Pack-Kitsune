@@ -21,7 +21,7 @@ This repository is a **sanitized, fictional** RMF authorization package that dem
 - How I maintain **continuous monitoring** and inspection readiness over time
 
 ### What to review first (5–10 minutes)
-1. `0_system-overview/system-description.md`
+1. [System description](ato-pack-kitsune/0_system-overview/system-description.md)
 2. `1_rmf-artifacts/SSP.md`
 3. `2_controls-and-evidence/controls/AC-2.md` (then AU-2, CM-2, IA-2, SI-2)
 4. `3_poam/poam-workflow.md`

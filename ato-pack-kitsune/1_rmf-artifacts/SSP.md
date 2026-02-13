@@ -63,8 +63,8 @@ Kitsune is an isolated local area network (LAN) used to develop, integrate, and 
 - Additional classified-program expectations (e.g., JSIG-style constraints) are **referenced conceptually** without reproducing controlled overlays.
 
 ### 3.2 Where controls and evidence live (clickable)
-- **Control narratives:** [2_controls-and-evidence/controls/](../2_controls-and-evidence/controls/)  
-- **Evidence examples:** [2_controls-and-evidence/evidence/](../2_controls-and-evidence/evidence/)  
+- **Control narratives:** [Controls](../2_controls-and-evidence/controls/)  
+- **Evidence examples:** [Evidence](../2_controls-and-evidence/evidence/)  
 
 ---
 
@@ -76,27 +76,27 @@ Kitsune is an isolated local area network (LAN) used to develop, integrate, and 
 - **Patching (SI-2):** patch compliance tracked; exceptions documented; findings flow into POA&M.  
 - **Vulnerability scanning (RA-5):** scheduled scanning of in-boundary components; findings triaged into POA&M.  
 
-**Continuous Monitoring Plan:** [continuous-monitoring-plan.md](continuous-monitoring-plan.md)
+**Continuous Monitoring Plan:** [Continuous Monitoring Plan](continuous-monitoring-plan.md)
 
 ---
 
 ## 5. Supporting Plans (public-safe)
 
-- **Configuration Management Plan:** [configuration-management-plan.md](configuration-management-plan.md)  
-- **Incident Response Plan:** [incident-response-plan.md](incident-response-plan.md)  
-- **Continuous Monitoring Plan:** [continuous-monitoring-plan.md](continuous-monitoring-plan.md)  
+- **Configuration Management Plan:** [Configuration Management Plan](configuration-management-plan.md)  
+- **Incident Response Plan:** [IRP](incident-response-plan.md)  
+- **Continuous Monitoring Plan:** [Continuous Monitoring Plan](continuous-monitoring-plan.md)  
 
 ---
 
 ## 6. POA&M (example)
 
-- **POA&M workflow:** [3_poam/poam-workflow.md](../3_poam/poam-workflow.md)  
-- **Sample POA&M export:** [3_poam/poam-sample.csv](../3_poam/poam-sample.csv)  
+- **POA&M workflow:** [POA&M Workflow](../3_poam/poam-workflow.md)  
+- **Sample POA&M export:** [Sample POA&M](../3_poam/poam-sample.csv)  
 
 ---
 
 ## 7. Diagrams / Inventory
 
-- **Boundary diagram:** [0_system-overview/boundary-diagram.md](../0_system-overview/boundary-diagram.md)  
-- **Data flow diagram:** [0_system-overview/data-flow-diagram.md](../0_system-overview/data-flow-diagram.md)  
-- **Asset inventory:** [0_system-overview/asset-inventory.md](../0_system-overview/asset-inventory.md)  
+- **Boundary diagram:** [Bundary Diagram](../0_system-overview/boundary-diagram.md)  
+- **Data flow diagram:** [Data Flow Diagram](../0_system-overview/data-flow-diagram.md)  
+- **Asset inventory:** [Asset Inventory](../0_system-overview/asset-inventory.md)  

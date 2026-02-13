@@ -22,7 +22,7 @@ Kitsune manages user and privileged accounts through a documented lifecycle so t
 1. **Request:** Access request submitted with justification (need-to-know), requested role(s), and system(s) in scope.
 2. **Prerequisites:** Training/briefing requirements satisfied (as applicable) before provisioning.
 3. **Approval:** System Owner approves account creation and any privileged role assignment.
-4. **Provisioning:** Account Manager/Admin provisions the account in the fictional IdP/directory service and applies role/group membership.
+4. **Provisioning:** LAN Admin provisions the account in the fictional IdP/directory service and applies role/group membership.
 5. **Modification:** Role changes follow the same approval path (especially for privileged roles).
 6. **Disable/Remove:** Accounts are disabled/removed promptly upon termination/transfer, role change, policy violation, or when access is no longer required.
 
@@ -33,7 +33,7 @@ Kitsune manages user and privileged accounts through a documented lifecycle so t
 
 ### Who does what (roles)
 - **System Owner:** Approves account creation and privileged access; owns risk decisions for exceptions.
-- **Account Managers / LAN Admins:** Execute provisioning, modification, disabling, and removal actions.
+- **Account LAN Admins:** Execute provisioning, modification, disabling, and removal actions.
 - **ISSO:** Validates evidence exists and is complete; tracks noncompliance and POA&M items.
 - **ISSM:** Provides final review / quality control for process adherence and inspection readiness.
 

@@ -22,7 +22,7 @@ Kitsune uniquely identifies and authenticates users and administrators before al
 - LAN services (source control, CI/build, artifact repo) enforce authorization based on role/group membership.
 
 ### Who
-- LAN Admins manage authentication services.
+- System Admins manage authentication services.
 - ISSO validates evidence and ensures policies are implemented and followed.
 
 ### When / cadence

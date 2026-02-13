@@ -26,7 +26,7 @@ Kitsune defines and logs security-relevant events across the isolated LAN to sup
 - Central logging/SIEM (fictional) is the authoritative repository for security event logs.
 
 ### Who reviews logs
-- SecOps / ISSO reviews alerts and performs routine log review sampling.
+- ISSO reviews alerts and performs routine log review sampling.
 - Findings are documented and, when needed, tracked through POA&M.
 
 ### When / cadence (example)

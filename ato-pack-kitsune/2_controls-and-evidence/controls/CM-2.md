@@ -22,7 +22,7 @@ Kitsune maintains documented baselines for in-boundary components (workstations,
 - Baseline descriptions and change history live in this repo as public-safe summaries.
 
 ### Who approves changes
-- System Owner / LAN Admins approve operational changes.
+- CCB's approve operational changes.
 - ISSO/ISSM validates documentation quality and evidence completeness prior to assessment.
 
 ### When / cadence

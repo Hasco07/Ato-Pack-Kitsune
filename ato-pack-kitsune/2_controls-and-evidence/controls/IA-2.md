@@ -32,5 +32,6 @@ Kitsune uniquely identifies and authenticates users and administrators before al
 ---
 
 ## Evidence (public-safe examples)
-- Authentication flow description: `2_controls-and-evidence/evidence/authentication-sample/auth-flow-description.md`
-- MFA policy summary: `2_controls-and-evidence/evidence/authentication-sample/mfa-policy-summary.md`
+- [Authentication flow description](../evidence/authentication-sample/auth-flow-description.md)
+- [MFA policy summary](../evidence/authentication-sample/mfa-policy-summary.md)
+

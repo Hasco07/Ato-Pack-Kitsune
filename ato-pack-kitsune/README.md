@@ -1,59 +1,86 @@
 # Public ATO Pack — “Kitsune” (Fictional System)
 
-This repository is a **sanitized, fictional** RMF authorization package that demonstrates how I structure:
+A **sanitized, fictional** RMF authorization package showing how I structure:
+- **SSP-style documentation**
+- **Control implementation narratives**
+- **Evidence mapping**
+- **POA&M workflow**
+- **Continuous monitoring + inspection readiness artifacts**
 
-- System description + boundary
-- SSP-style documentation
-- Control implementation narratives
-- Evidence organization + traceability
-- POA&M workflow
-- Continuous monitoring + inspection readiness artifacts
-
-> **OPSEC / confidentiality note:** This repo contains **no** proprietary templates, customer data, real system diagrams, hostnames, IPs, or screenshots. Everything is fictionalized to show *process and quality*.
+This repo is intentionally designed to look like a clean, assessor-friendly “ATO binder” that a busy ISSM/ISSO lead can review quickly.
 
 ---
 
 ## For Hiring Managers
 
 ### What this demonstrates
-- How I write **audit-ready control implementations** (clear, evidence-backed narratives)
-- How I package **evidence** so it is easy to review and hard to misunderstand
-- How I maintain **continuous monitoring** and inspection readiness over time
+- How I write **clear, auditable control implementations** (assessment-minded, evidence-backed)
+- How I organize **evidence** for traceability (reviewable, consistent, low-friction)
+- How I structure artifacts to support **authorization + continuous monitoring**
+- How I reduce inspection pain using **standardization and quality controls**
 
 ### What to review first (5–10 minutes)
-1. [System description](ato-pack-kitsune/0_system-overview/system-description.md)
-2. `1_rmf-artifacts/SSP.md`
-3. `2_controls-and-evidence/controls/AC-2.md` (then AU-2, CM-2, IA-2, SI-2)
-4. `3_poam/poam-workflow.md`
-5. `4_self-inspections/inspection-readiness-runbook.md`
+1. **System overview:** [System description](ato-pack-kitsune/0_system-overview/system-description.md)
+2. **SSP (public-style):** [SSP](ato-pack-kitsune/1_rmf-artifacts/SSP.md)
+3. **Pick 2–3 controls:** [Controls folder](ato-pack-kitsune/2_controls-and-evidence/controls/) 
+   Suggested: `AC-2.md`, `AU-2.md`, `CM-2.md`, `SI-2.md`
+4. **POA&M workflow:** `3_poam/poam-workflow.md`
+5. **Inspection readiness:** `4_self-inspections/inspection-readiness-runbook.md`
 
-### What’s intentionally omitted
-- Classified / sensitive / export-controlled information
-- Program-unique implementation details and proprietary templates
-- Any real evidence artifacts from secure environments
+### What’s intentionally omitted (OPSEC / proprietary)
+- Any proprietary templates, customer names, real system diagrams, hostnames, IPs, or screenshots
+- Any eMASS exports, JSIG overlays, or program-specific implementation details
+- Any classified, export-controlled, or sensitive data
+
+Everything here is **fictionalized/sanitized** to demonstrate process and quality without exposing real environments.
+
+---
+
+## What this repo is (and isn’t)
+**Is:** A public demonstration of how I package RMF artifacts and evidence in a way that holds up under review.  
+**Is not:** An official DoD template, compliance advice, or a complete control catalog implementation.
 
 ---
 
 ## Repository map
 
 ```text
-0_system-overview/         System description, boundary, data flows, roles
-1_rmf-artifacts/           SSP, CM plan, IR plan, CM plan
-2_controls-and-evidence/   Control narratives + example evidence placeholders
-3_poam/                    Example POA&M workflow + sample export
-4_self-inspections/        Readiness checklists + inspection runbook
-5_briefs/                  Example risk brief + battle rhythm
-```
+0_system-overview/
+  system-description.md
+  boundary-diagram.md
+  data-flow-diagram.md
+  roles-and-responsibilities.md
 
----
+1_rmf-artifacts/
+  SSP.md
+  control-tailoring-decisions.md
+  continuous-monitoring-plan.md
+  incident-response-plan.md
+  configuration-management-plan.md
 
-## How to use this repo (quick)
-- Treat `SSP.md` as the “spine” of the package.
-- Each control narrative in `2_controls-and-evidence/controls/` points to evidence artifacts (fictional) in `2_controls-and-evidence/evidence/`.
-- `3_poam/` shows how findings are tracked to closure.
-- `4_self-inspections/` shows how readiness is sustained.
+2_controls-and-evidence/
+  controls/
+    AC-2.md
+    AU-2.md
+    CM-2.md
+    IA-2.md
+    SI-2.md
+    ... (more)
+  evidence/
+    account-management-sample/
+    logging-config-sample/
+    vuln-scan-summary-sample/
+    patch-compliance-sample/
+    change-control-sample/
 
----
+3_poam/
+  poam-sample.csv
+  poam-workflow.md
 
-## Status
-Starter kit created: 2026-02-13. Replace placeholders as you build the pack.
+4_self-inspections/
+  self-inspection-checklist.md
+  inspection-readiness-runbook.md
+
+5_briefs/
+  executive-risk-brief.md
+  weekly-security-battle-rhythm.md

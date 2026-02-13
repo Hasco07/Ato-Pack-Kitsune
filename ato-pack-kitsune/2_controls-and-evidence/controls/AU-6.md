@@ -39,10 +39,10 @@ Kitsune reviews and analyzes audit logs and security-relevant events to detect s
 ---
 
 ## Evidence (public-safe examples)
-- Log review checklist: `2_controls-and-evidence/evidence/logging-config-sample/log-review-checklist.md`
-- Weekly log review record: `2_controls-and-evidence/evidence/logging-config-sample/weekly-log-review_YYYY-MM-DD.md`
-- Alert triage playbook: `2_controls-and-evidence/evidence/logging-config-sample/alert-triage-playbook.md`
-- (Optional) Monthly audit summary: `5_briefs/executive-risk-brief.md`
+- [Log review checklist](../evidence/logging-config-sample/log-review-checklist.md)
+- [Weekly log review record](../evidence/logging-config-sample/weekly-log-review_YYYY-MM-DD.md)
+- [Alert triage playbook](../evidence/logging-config-sample/alert-triage-playbook.md)
+- (Optional) [Monthly audit summary](../../5_briefs/executive-risk-brief.md)
 
 ---
 

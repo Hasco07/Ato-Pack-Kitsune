@@ -52,7 +52,7 @@ Kitsune manages user and privileged accounts through a documented lifecycle so t
 ---
 
 ## Evidence (public-safe examples)
-- Account provisioning workflow: `2_controls-and-evidence/evidence/account-management-sample/account-provisioning-workflow.md`
+- [Account provisioning workflow](../evidence/account-management-sample/account-provisioning-workflow.md)
 - Access review record: `2_controls-and-evidence/evidence/account-management-sample/access-review_YYYY-MM-DD.md`
 - (Optional) Ticket examples, account inventory export (fictional), privileged access list, and log review checklist.
 

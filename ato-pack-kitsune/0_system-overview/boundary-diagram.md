@@ -1,4 +1,3 @@
-```md
 # Boundary Diagram (Mermaid)
 
 > Fictional boundary diagram to show what is **in-scope** vs **out-of-scope** for Kitsune.
@@ -31,25 +30,25 @@ flowchart LR
       Scanner["Vulnerability Scanner"]
     end
 
-    DevWS -->|Authenticate| IdP
-    AdminWS -->|Privileged admin auth| IdP
+    DevWS --> IdP
+    AdminWS --> IdP
 
-    DevWS -->|Commit / Fetch| Git
-    CI -->|Fetch source| Git
-    CI -->|Store build outputs| Art
-    CI -->|Execute automated tests| Test
+    DevWS --> Git
+    CI --> Git
+    CI --> Art
+    CI --> Test
 
-    Git -->|Forward logs| SIEM
-    CI -->|Forward logs| SIEM
-    Art -->|Forward logs| SIEM
-    Test -->|Forward logs| SIEM
-    IdP -->|Auth/audit logs| SIEM
+    Git --> SIEM
+    CI --> SIEM
+    Art --> SIEM
+    Test --> SIEM
+    IdP --> SIEM
 
-    Scanner -->|Scan (scheduled)| DevWS
-    Scanner -->|Scan (scheduled)| Git
-    Scanner -->|Scan (scheduled)| CI
-    Scanner -->|Scan (scheduled)| Art
-    Scanner -->|Scan (scheduled)| Test
+    Scanner --> DevWS
+    Scanner --> Git
+    Scanner --> CI
+    Scanner --> Art
+    Scanner --> Test
   end
 
   Media["Controlled Media Transfer Point (Fictional)"]

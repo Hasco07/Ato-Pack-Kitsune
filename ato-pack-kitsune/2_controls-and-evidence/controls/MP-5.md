@@ -27,7 +27,7 @@ Because Kitsune is air-gapped, any import/export of data or updates is handled v
 ### Who
 - **Requestor:** provides justification and intended content.
 - **Approver (System Owner / delegate):** authorizes transfer.
-- **Media Control Custodian (fictional):** maintains inventory and executes procedure.
+- **Media Control Agent (fictional):** maintains inventory and executes procedure.
 - **ISSO:** validates evidence and flags noncompliance; tracks issues in POA&M when needed.
 
 ### When / cadence
